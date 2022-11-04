@@ -9,36 +9,133 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?
 family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr
-.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="Images/logo5.png" height="50" width="200"> </a>
-            <div class="nav-links">
-                <i class="fa fa-times" ></i>
+          <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"> Easy<i>N</i>otes</h2>
+            </div>
+                
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search here...">
+                <a href="#"> <button class="btn">Search</button></a>
+            
+            </div>
+          </div>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+            
                 <ul>
                     <li> <a href="">HOME</a></li>
-                    <li> <a href="">ABOUT</a></li>
                     <li> <a href="">COURSE</a></li>
-                    <li> <a href="">BLOG</a></li>
+                    <li> <a href="">COLLEGE</a></li>
+                    <li> <a href="">NOTICE</a></li>
                     <li> <a href="">CONTACT</a></li>
+                    <li> <a href="">ABOUT</a></li>
+
+
                 </ul>
             </div>
-            <i class="fa fa-bars" ></i>
+            
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+
         <div class="text-box">
-            <h1>Welcome to Easynotes</h1>
+            <br> <H1><b>  Easynotes </b></H1>
             <p>
-                 The sole option to increase your
-                 capacity by offering all study resources <br>
-        
-                 for BSc CSIT, BBA, BIT, BCA,BSc 
-                  courses at Tribhuwan University and +2(Science and Management)
+                <i>The best Platform for outstanding results</i>
+    
             </p>
-            <a href="" class="hero-btn">Visit us to know more</a>
+            <a href="" class="hero-btn">GET STARTED</a>
+
+
+            <div class="form">
+                <h2>Login here</h2>
+                <input type="email" name="email" placeholder="Enter your Email">
+                <input type="password" name="" placeholder="Enter your Password ">
+                <button class="btn"> <a href="#">Login </a></button>
+                <p class="link">Don't have an account?</p> 
+                <a href="#">Sign up </a>
+                <p class="liw">Login With </p>
+            </div>
         </div>
     </section>
+    
+
+<!--Course-->
+<Section class="Course">
+    <H1>Why Easynotes?</H1>
+    <p>
+        <b>Easynotes helps you to prepare your exams by providing reference materials for the following course. </b>
+    </p>
+     <div class="row">
+        <div class="course-col">
+            <h3>+2 Science & Management</h3>
+            <p>
+         A  complete set of reference materials
+         like notes, syllabus, question banks, solutions,
+          and many more along with
+          colleges in Nepal.
+            </p>
+        </div>
+        
+        <div class="course-col">
+            <h3>BSC CSIT</h3>
+            <p>
+                A complete set of reference materials
+                like notes, syllabus, question banks, solutions,
+                 and many more along with
+                 colleges in Nepal.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>BIT</h3>
+            <p>
+                A complete set of reference materials
+                like notes, syllabus, question banks, solutions,
+                 and many more along with
+                 colleges in Nepal.
+            </p>
+            </div>
+            <div class="course-col">
+                <h3> BCA</h3>
+                <p>
+                    A complete set of reference materials
+                    like notes, syllabus, question banks, solutions,
+                     and many more along with
+                     colleges in Nepal.
+                </p>
+                </div>
+
+     </div>
+</Section>
+
+<!----------Testimonials----------->
+<section class="testimonials">
+    <h1>Students Experience on Easynotes </h1>
+    <P>Here we go</P>
+</section>
+
+
+
+
+
+
+
+<!--------javascript for Toggle Menu-->
+    <script>
+
+        var navlinks= document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right ="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
 </body>
 </html>
