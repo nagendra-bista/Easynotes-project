@@ -16,6 +16,7 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    background-color:transparent;
 }
 .icon{
    width: 200px;
@@ -46,7 +47,7 @@ nav {
    border-top-left-radius: 5px;
 }
 .btn{
-   width: 80px;
+   width: 60px;
    height: 40px;
    background: #ff7200;
    border: 2px solid #ff7200;
@@ -65,19 +66,22 @@ nav {
 }
 
  .nav-links{
+  margin-top: -30px;
     flex: 1;
     text-align: right;
+   
  }
  .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 10px;
     position: relative;  
  }
  .nav-links ul li a{
     color: #fff;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
  }
  .nav-links ul li::after{
     content: '';
@@ -201,11 +205,7 @@ nav {
 .form input:focus{
    color: #fff;
    font-family: arial;
-   
-
 }
-
-
  /*---Courses--*/
  .Course{
    width: 80%;
@@ -231,13 +231,14 @@ nav {
    justify-content: space-between;
  }
  .course-col{
-   flex-basis: 31%;
+   flex-basis: 24%;
    background: #fff3f3;
    border-radius: 10px;
    margin-bottom: 5%;
    padding: 20px 12px;
+   cursor: pointer;
    box-sizing: border-box;
-   transition: 0.3s;
+   transition: 0.25s;
  }
  h3{
    text-align: center;
@@ -254,10 +255,49 @@ nav {
    }
 }
 /*----------testimonials-------*/
-.testimonials{
-   width: 80%;
+.testimonials{ 
+   width: 90%;
    margin: auto;
-   padding-top: 100px;
-   text-align: center;
+   padding-top: 20px;
+   text-align:center;
+}
+
+.testimonials-col{
+   flex-basis: 31%;
+   border-radius: 85px;
+   margin-bottom: 5%;
+   font-weight: bold;
+   text-align: left;
+   background-color: rgb(185, 224, 93);
+   padding: 10px;
+   cursor: pointer;
+   display: flex;
+   transition: 0.25s;
+}
+.testimonials-col:hover{
+   box-shadow: 0 0 20px 8px rgba(27, 2, 2, 0.2);
 
 }
+.testimonials-col h3{
+   text-align: left;
+}
+.testimonials-col img{
+   height: 50px;
+   margin-left:18px;
+   margin-right: 0px;
+   border-radius: 50%;
+}
+.testimonials-col p{
+   padding: 15px;
+   text-align: left;
+
+}
+.testimonials-col .fa{
+   color: #f44336;
+}
+ @media(max-width:700px){
+   .testimonials-col img{
+      margin-right: 15px;
+      margin-left: 15px;
+   }
+ }
