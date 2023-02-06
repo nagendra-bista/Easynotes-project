@@ -38,9 +38,10 @@ nav img{
 .nav-links ul li{
    list-style: none;
    display: inline-block;
-   padding: 8px 12px;
+   padding: 8px 16px;
    position: relative;
    font-weight: 400;
+   padding-left:0px;
 }
 .nav-links ul li a{
    color:black;
@@ -136,6 +137,61 @@ nav .fa{
  }
  
 }
+.fa-solid{
+   cursor: pointer;
+}
+
+.sub-menu1{
+   display: none;
+   pointer-events: auto;
+}
+
+.nav-links ul li:hover .sub-menu1{
+   display:block;
+   position: absolute;
+   background:#ebe117;
+   margin-top: 9px;
+   margin-left: -15px;
+   z-index: 1;
+   overflow-wrap: break-word;
+}
+.nav-links ul li:hover .sub-menu1 ul{
+   display: block;
+   margin: 10px;
+   z-index: 1;
+}
+.nav-links ul li:hover .sub-menu1 ul li{
+   width: 135px;
+   padding: 10px;
+   border-bottom: 1px dotted #fff;
+   background: transparent;
+   text-align: left;
+}
+.nav-links ul li:hover .sub-menu1 ul li:last-child{
+   border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -22,8 +22,19 @@ family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,600&display=swap"
                 <i class="fa fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="">Home</a> </li>
-                    <li><a href="">Courses</a> </li>
-                    <li><a href="">Colleges</a> </li>
+                    <li><a href="">Courses</a> <i class="fa-solid fa-caret-down" onclick="showMenu"> </i>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li> <a href="#science"> +2 Science </a> </li>
+                            <li> <a href="#science"> Management </a> </li>
+                            <li> <a href="#CSIT"> BSC CSIT </a> </li>
+                            <li> <a href="#BIT"> BIT </a> </li>
+                            <li> <a href="#BCA"> BCA </a> </li>
+                        </ul>
+
+                    </div>
+                </li>
+                    <li><a href="">Colleges</a><i class="fa-solid fa-caret-down"></i> </li>
                     <li><a href="">Notice</a> </li>
                     <li><a href="">Contact us</a> </li>
                     
@@ -54,7 +65,7 @@ family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,600&display=swap"
     </p>
      <div class="row">
         <div class="course-col">
-            <h3>+2 Science & Management</h3>
+            <h3 id="science">+2 Science & Management</h3>
             <p>
          A  complete set of reference materials
          like notes, syllabus, question banks, solutions,
@@ -62,9 +73,8 @@ family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,600&display=swap"
           colleges in Nepal.
             </p>
         </div>
-        
         <div class="course-col">
-            <h3>BSC CSIT</h3>
+            <h3 id="CSIT">BSC CSIT</h3>
             <p>
                 A complete set of reference materials
                 like notes, syllabus, question banks, solutions,
@@ -73,7 +83,7 @@ family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,600&display=swap"
             </p>
         </div>
         <div class="course-col">
-            <h3>BIT</h3>
+            <h3 id="BIT">BIT</h3>
             <p>
                 A complete set of reference materials
                 like notes, syllabus, question banks, solutions,
@@ -82,7 +92,7 @@ family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,600&display=swap"
             </p>
             </div>
             <div class="course-col">
-                <h3> BCA</h3>
+                <h3 id="BCA"> BCA</h3>
                 <p>
                     A complete set of reference materials
                     like notes, syllabus, question banks, solutions,
