@@ -38,7 +38,7 @@ nav img{
 .nav-links ul li{
    list-style: none;
    display: inline-block;
-   padding: 8px 16px;
+   padding: 8px 12px;
    position: relative;
    font-weight: 400;
    padding-left:0px;
@@ -228,12 +228,23 @@ nav .fa{
    cursor: pointer;
    box-sizing: border-box;
    transition: 0.25s;
+   text-decoration: none;
  }
  h3{
    text-align: center;
    font-weight: 600;
    margin: 10px 0;
-
+   color:#05056d;
+ }
+ .course-col h3{
+   text-align: center;
+   font-weight: 600;
+   margin: 10px 0;
+   color:#05056d;
+ }
+ .course-col h3:hover{
+   color: #bd2984;
+   transform: scale(1.2);
  }
  .course-col:hover{
    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -295,6 +306,7 @@ nav .fa{
    margin: auto;
 }
 .row{
+   
    display: flex;
    flex-wrap: wrap;
 }
@@ -308,8 +320,9 @@ nav .fa{
  padding: 40px 0;
 }
 .footer-col{
-   width: 25%;
+   width: 30%;
    padding: 0 15px;
+   white-space: nowrap;
 }
 .footer-col  h4{
    font-size: 18px;
@@ -365,6 +378,10 @@ padding-left: 8px;
 }
 /*responsive*/
 @media(max-widht:767px){
+   .row{
+      width: fit-content;
+      text-align: center;
+   }
    .footer-col{
       width: 50%;
       margin-bottom: 30px;
@@ -373,7 +390,90 @@ padding-left: 8px;
 @media(max-widht:574px){
    .footer-col{
       width: 100%;
+      display: none;
+      
    }
 }
+/* About US page */
+.sub-header{
+   height: 50vh;
+   background-color:azure;
+   text-align: center;
+   color: #7219bf;
+}  
 
+/* course-science and management */
+.row-1{
+   margin-top: 3%;
+   display: flex;
+   justify-content: space-between;
+   padding-left: -100%;
+ }
+.course-science-management{
+   width: 80%;
+   margin-left: -100px;
+   text-align: center;
+   padding-top: 0px;
+}
+.course-science{
+   flex-basis: 45%;
+   /* background:#fff3f3; */
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 10px 12px;
+   padding-left: 0px;
+   box-sizing: border-box;
+   transition: 0.25s;
+   text-decoration: none;
+ }
+ .course-management{
+   flex-basis: 45%;
+   /* background: #fff3f3; */
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 10px 12px;
+   padding-right: 90px;
+   box-sizing: border-box;
+   transition: 0.25s;
+   text-decoration: none;
+   text-align: left;
+ }
+ .course-science-management h2{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: oblique;
+   color: #2955bd;
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+      color:#05056d;
+ }
+ .course-science-management a{
+   text-decoration: none;
+ }
+ .course-science-management h3:hover{
+   color: #bd2984;
+   transform: scale(1.2);
+ }
+ /* .course-management h3{
+   text-align: left;
+ }
+ .course-management h2{
+   text-align: left;
+ } */
+ .course-management :h3{
+   color: #bd2984;
+   transform: scale(1.2);
+ }
 
+ @media(max-width:700px){
+   .row-1{
+      flex-direction: column;
+      padding-left: 10px;
+   }
+   .course-science-management{
+      padding-left: 20px;
+   }
+   .course-management{
+      padding-left: 80px;
+   }
+ }
